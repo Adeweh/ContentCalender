@@ -2,6 +2,7 @@ package com.example.contentcalender.controller;
 
 import com.example.contentcalender.content.Content;
 import com.example.contentcalender.repository.ContentCollectionRepo;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -28,10 +29,9 @@ public class ContentController {
     }
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("")
-    public void create(@RequestBody Content content){
+    public void create(@Valid @RequestBody Content content){
         repository.save(content);
     }
-
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @PutMapping("/{id}")
     public void update(@RequestBody Content content,@PathVariable Integer id){

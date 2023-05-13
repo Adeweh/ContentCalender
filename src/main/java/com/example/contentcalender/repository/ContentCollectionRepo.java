@@ -29,7 +29,6 @@ public class ContentCollectionRepo {
     @PostConstruct
     private void init(){
         Content content = new Content(1,"First Post","This is a contentList", Status.IDEA, Type.ARTICLE, LocalDateTime.now(), null, "");
-
         contentList.add(content);
     }
     public void save(Content content){
