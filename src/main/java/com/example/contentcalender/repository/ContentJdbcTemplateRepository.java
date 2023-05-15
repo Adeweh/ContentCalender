@@ -16,15 +16,16 @@ public class ContentJdbcTemplateRepository {
     private final JdbcTemplate jdbcTemplate;
 
     private static Content mapRow(ResultSet rs, int rowNum) throws SQLException {
-        return new Content(rs.getInt(columnLabel: "id"),
-        rs.getString(columnLabel: "title"),
-        rs.getString(columnLabel: "description"),
-        rs.getString(columnLabel: "status"),
-        rs.getString(columnLabel: "content_type"),
-        rs.getTimestamp(columnLabel: "date_created"),
-        rs.getTimestamp(columnLabel: "date_updated"),
-        rs.getString(columnLabel: "url")
-        );
+//        return new Content(rs.getInt(columnLabel: "id"),
+//        rs.getString(columnLabel: "title"),
+//        rs.getString(columnLabel: "description"),
+//        rs.getString(columnLabel: "status"),
+//        rs.getString(columnLabel: "content_type"),
+//        rs.getTimestamp(columnLabel: "date_created"),
+//        rs.getTimestamp(columnLabel: "date_updated"),
+//        rs.getString(columnLabel: "url")
+//        );
+        return null;
     }
 
     public List<Content> getAllContent(){

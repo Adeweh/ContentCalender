@@ -2,6 +2,8 @@ package com.example.contentcalender.controller;
 
 import com.example.contentcalender.content.Content;
 import com.example.contentcalender.repository.ContentCollectionRepo;
+import com.example.contentcalender.repository.ContentJdbcTemplateRepository;
+import com.example.contentcalender.repository.ContentRepository;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -15,7 +17,7 @@ import java.util.Optional;
 @RequestMapping("/api/v1/content")
 @AllArgsConstructor
 public class ContentController {
-    private final ContentCollectionRepo repository;
+    private final ContentRepository repository;
 
     @GetMapping("")
     public List<Content> findAll(){
@@ -45,7 +47,7 @@ public class ContentController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id){
-        repository.delete(id);
+        repository.deleteById(id);
     }
 
 
