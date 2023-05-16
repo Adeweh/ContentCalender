@@ -1,6 +1,7 @@
 package com.example.contentcalender.controller;
 
 import com.example.contentcalender.content.Content;
+import com.example.contentcalender.enums.Status;
 import com.example.contentcalender.repository.ContentCollectionRepo;
 import com.example.contentcalender.repository.ContentJdbcTemplateRepository;
 import com.example.contentcalender.repository.ContentRepository;
@@ -49,6 +50,20 @@ public class ContentController {
     public void delete(@PathVariable Integer id){
         repository.deleteById(id);
     }
+
+    @GetMapping("/filter/{keyword}")
+    public List<Content> findByTitle(@PathVariable String keyword){
+        return repository.findAllByTitleContains(keyword);
+    }
+
+    @GetMapping("/filter/status/{status}")
+    public List<Content> findByStatus(@PathVariable Status status){
+        return repository.listByStatus(status);
+    }
+
+
+
+
 
 
 
