@@ -11,5 +11,5 @@ CREATE TABLE IF NOT EXISTS Content(
   primary key(id)
 );
 
-INSERT INTO Content(title,description,status,content_type,date_created)
-VALUES ('My Content Calender','A project about content calender','IDEA','ARTICLE',CURRENT_TIMESTAMP)
+-- INSERT INTO Content(title,description,status,content_type,date_created)
+-- VALUES ('My Content Calender','A project about content calender','IDEA','ARTICLE',CURRENT_TIMESTAMP)

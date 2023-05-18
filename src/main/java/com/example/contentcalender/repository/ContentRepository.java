@@ -13,9 +13,10 @@ public interface ContentRepository extends JpaRepository<Content, Integer> {
 
     List<Content> findAllByTitleContains(String keyword);
 
-    @Query("""
-                SELECT * FROM Content
-                where status = :status
-        """)
-    List<Content> listByStatus(@Param("status") Status status);
+//    @Query("""
+//                SELECT * FROM Content
+//                where status = :status
+//        """)
+//    List<Content> listByStatus(@Param("status") Status status);
+    List<Content> findContentByStatus(Status status);
 }

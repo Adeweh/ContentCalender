@@ -4,25 +4,34 @@ import com.example.contentcalender.enums.Status;
 import com.example.contentcalender.enums.Type;
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
-import org.springframework.data.annotation.Id;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 
 import java.time.LocalDateTime;
 
-
-public record Content(
+@Entity
+@AllArgsConstructor
+@Data
+public class Content {
         @Id
-        Integer id,
+        Integer id;
         @NotBlank
-        String title,
-        String description,
-        Status status,
-        Type contentType,
-        LocalDateTime dateCreated,
-        LocalDateTime dateUpdated,
-        String url
+        String title;
+        String description;
+        Status status;
+        Type contentType;
+        LocalDateTime dateCreated;
+        LocalDateTime dateUpdated;
+        String url;
 
-        ) {
+
+        public Content() {
+
+        }
 
 
 }

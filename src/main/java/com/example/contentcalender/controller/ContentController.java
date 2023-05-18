@@ -58,7 +58,7 @@ public class ContentController {
 
     @GetMapping("/filter/status/{status}")
     public List<Content> findByStatus(@PathVariable Status status){
-        return repository.listByStatus(status);
+        return repository.findContentByStatus(status);
     }
 
 
