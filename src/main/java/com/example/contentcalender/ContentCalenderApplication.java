@@ -22,18 +22,6 @@ public class ContentCalenderApplication {
         SpringApplication.run(ContentCalenderApplication.class, args);
     }
 
-    @Bean
-    CommandLineRunner commandLineRunner(ContentRepository repository){
-        return args -> {
-
-                Content content = new Content(1,"Hello Luminaries","All about graduation", Status.IDEA, Type.VIDEO, LocalDateTime.now(), null, "");
-
-                repository.save(content);
-
-        };
-
-    }
-
 
 
 }

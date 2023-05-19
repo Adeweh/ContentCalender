@@ -1,0 +1,35 @@
+{
+  "courses": [
+    {
+      "id": null,
+      "title": "hey",
+      "description": "oh oh",
+      "status": "PUBLISHED",
+      "contentType": "ARTICLE",
+      "dateCreated": "2023-05-19t00:00:00.000000",
+      "dateUpdated": null,
+      "url": ""
+    },
+
+    {
+      "id": null,
+      "title": "hello",
+      "description": "oh oh",
+      "status": "PUBLISHED",
+      "contentType": "ARTICLE",
+      "dateCreated": "2023-05-19t00:00:00.000000",
+      "dateUpdated": null,
+      "url": ""
+    },
+    {
+      "id": null,
+      "title": "hey",
+      "description": "oh oh",
+      "status": "PUBLISHED",
+      "contentType": "ARTICLE",
+      "dateCreated": "2023-05-19t00:00:00.000000",
+      "dateUpdated": null,
+      "url": ""
+    }
+  ]
+}
