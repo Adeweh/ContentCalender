@@ -1,7 +1,6 @@
-{
-  "courses": [
+[
     {
-      "id": null,
+      "id": 1,
       "title": "hey",
       "description": "oh oh",
       "status": "PUBLISHED",
@@ -12,7 +11,7 @@
     },
 
     {
-      "id": null,
+      "id": 2,
       "title": "hello",
       "description": "oh oh",
       "status": "PUBLISHED",
@@ -22,7 +21,7 @@
       "url": ""
     },
     {
-      "id": null,
+      "id": 3,
       "title": "hey",
       "description": "oh oh",
       "status": "PUBLISHED",
@@ -32,4 +31,4 @@
       "url": ""
     }
   ]
-}
+
