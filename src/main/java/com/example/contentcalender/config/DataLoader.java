@@ -1,8 +1,8 @@
 package com.example.contentcalender.config;
 
-import aj.org.objectweb.asm.TypeReference;
 import com.example.contentcalender.content.Content;
 import com.example.contentcalender.repository.ContentRepository;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
