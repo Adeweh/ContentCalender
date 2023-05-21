@@ -4,5 +4,5 @@ public enum Status {
     IDEA,
     WORK_IN_PROGRESS,
     COMPLETED,
-    PUBLISH
+    PUBLISHED
 }
